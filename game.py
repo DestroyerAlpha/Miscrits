@@ -21,7 +21,7 @@ def gender():
     
     else:
         print "We don't know what that means. Try entering Male, Female or Others" 
-        gender(0)
+        gender()
     return naming
 
 def start(value):
@@ -75,21 +75,26 @@ def commonplace():
     where_to = raw_input(">")
 
     if where_to == 'Left':
-        search(misc)
+        search(misc,choice)
     elif where_to == "Right":
         home()
     else:
         print "I don't know what that means."
         commonplace()
     return
-misc = ["Aeronox",'Aquanox','Aria','Arigato','Azteko','Barkley','Beelzebug','Beetor','Bibbly','Blazertooth','Bloombat','Bloomple','Blowpuffle','Blub','Bludger','Boltipede','Boltzee','Boo Blazertooth','Boomble','Brainzer','Breezycheeks','Bubblegup','Bubbles','Budillo','Bullo','Butterus','Cerberuff' , 'Charix' , 'Clawva' , 'Craggy' , 'Crickin' , 'Croaky' , 'Cubsprout' , 'Currint' , 'Cyberdillo' , 'Dark_Arigato' , 'Dark_Beetor' , 'Dark_Breezycheeks' , 'Dark_Bubbles' , 'Dark_Bullo' , 'Dark_Craggy' , 'Dark_Croaky' , 'Dark_Cubsprout' , 'Dark_Dillorock' , 'Dark_Dravo' , 'Dark_Drilldent' , 'Dark_Drowsie' , 'Dark_Echino' , 'Dark_Eggy' , 'Dark_Electryo' , 'Dark_Elefauna' , 'Dark_Equestrion' , 'Dark_Exo' , 'Dark_Felis' , 'Dark_Firebrand' , 'Dark_Flameling' , 'Dark_Flowerpiller' , 'Dark_Hoghedge' , 'Dark_Hotfoot' , 'Dark_Humbug' , 'Dark_Hydroseal' , 'Dark_Kiloray' , 'Dark_Leggy' , 'Dark_Monk_Munk' , 'Dark_Narlope' , 'Dark_Nero' , 'Dark_Nessy' , 'Dark_Owlie' , 'Dark_Prawnja' , 'Dark_Quebble' , 'Dark_Shanghorse' , 'Dark_Shroomer' , 'Dark_Snatcher' , 'Dark_Snortus' , 'Dark_Sparkitten' , 'Dark_Sparkslug' , 'Dark_Viperd' , 'Dark_Weevern' , 'Dark_Whik' , 'Darryl\nDigsy' , 'Dillorock' , 'Dravo' , 'Drilldent' , 'Drowsie' , 'Dusa' , 'Echino' , 'Eggy' , 'Electronox' , 'Electryo' , 'Elefauna' , 'Elite_Minosoar' , 'Elite_Turkniss' , 'Elite_Waddless' , 'Environox' , 'Equestrion' , 'Exo' , 'Featherbeak' , 'Felis' , 'Fennie' , 'Fernux' , 'Firebrand' , 'Flameling' , 'Flintly\nFlowerpiller' , 'Flue' , 'Flurfy' , 'Flurrious' , 'Flutterpat' , 'Foil_Flintly' , 'Foil_Flutterpat' , 'Foil_Fossilia' , 'Foil_Kelpa' , 'Foil_Kiloray' , 'Foil_Liquifien' , 'Foil_Pamboo' , 'Foil_Podo' , 'Foil_Pollifog' , 'Foil_Thundercracker' , 'Foil_Waddles' , 'Fossilia' , 'Frostmite' , 'Furfin' , 'Gemix' , 'Giggles' , 'Gippo' , 'Gog' , 'Grimm_Kiloray' , 'Grubbean' , 'Gurgleplops' , 'Hawkai' , 'Hippoke' , 'Hoghedge' , 'Hotfoot' , 'Humbug' , 'Ignios\nJack' , 'Jellyshock' , 'Joltzer' , 'Kelpa' , 'Kiloray' , 'Lavarilla' , 'Leggy' , 'Light_Tectonyx' , 'Liquifien' , 'Levelorn' , 'Lumera' , 'Luna' , 'Magixio' , 'Magpole' , 'Mech' , 'Microblast' , 'Minosoar' , 'Monk_Munk' , 'Mumbah' , 'Mun_Kee' , 'Narlope' , 'Nero' , 'Nessy' , 'Nibbles' , 'Octavio' , 'Orcatide' , 'Osmeron' , 'Oqlie' , 'Oxo' , 'Pachydo' , 'Pamboo' , 'Patchkin' , 'Peekly' , 'Petrified_Breezycheeks' , 'Petrified_Flue' , 'Petrified_Owlie' , 'Petrified_Snatcher' , 'Petrified_Statikat' , 'Pipsqueak' , 'Pirate_Bludger' , 'Podo' , 'Pollifog' , 'Poltergust' , 'Prawnja' , 'Preshon' , 'Pujin' , 'Pyronox' , 'Quartex' , 'Quebble' , 'Quirk' , 'Raldio' , 'Rhinotaur' , 'Rocker_Octavio' , 'Scarecrow_Charix' , 'Scuzzy' , 'Shanghorse' , 'Shelbee' , 'Shocktopus' , 'Shroomer' , 'Sledgehog' , 'Slithero' , 'Snatcher' , 'Snorkels' , 'Snortus' , 'Sparkitten' , 'Sparkslug' , 'Sparkspeck' , 'Sparkupine' , 'Spinerette' , 'Splender' , 'Squawcat' , 'Squibee' , 'Squirmle' , 'Statikat' , 'Steamguin' , 'Tectonyx' , 'Terranox' , 'Thundercracker' , 'Tongutail' , 'Toro' , 'Treemur' , 'Tulipinny' , 'Turkniss' , 'Twiggum' , 'Ursiwave' , 'Vexie' , 'Viperd' , 'Waddles' , 'Wavesling' , 'Weevern' , 'Whik' , 'Wiggle' , 'Winnebeargo' , 'Wisper' , 'Zapatose']
+misc = ["Aeronox",'Aquanox','Aria','Arigato','Azteko','Barkley','Beelzebug','Beetor','Bibbly','Blazertooth','Bloombat','Bloomple','Blowpuffle','Blub','Bludger','Boltipede','Boltzee','Boo Blazertooth','Boomble','Brainzer','Breezycheeks','Bubblegup','Bubbles','Budillo','Bullo','Butterus','Cerberuff' , 'Charix' , 'Clawva' , 'Craggy' , 'Crickin' , 'Croaky' , 'Cubsprout' , 'Currint' , 'Cyberdillo' , 'Dark_Arigato' , 'Dark_Beetor' , 'Dark_Breezycheeks' , 'Dark_Bubbles' , 'Dark_Bullo' , 'Dark_Craggy' , 'Dark_Croaky' , 'Dark_Cubsprout' , 'Dark_Dillorock' , 'Dark_Dravo' , 'Dark_Drilldent' , 'Dark_Drowsie' , 'Dark_Echino' , 'Dark_Eggy' , 'Dark_Electryo' , 'Dark_Elefauna' , 'Dark_Equestrion' , 'Dark_Exo' , 'Dark_Felis' , 'Dark_Firebrand' , 'Dark_Flameling' , 'Dark_Flowerpiller' , 'Dark_Hoghedge' , 'Dark_Hotfoot' , 'Dark_Humbug' , 'Dark_Hydroseal' , 'Dark_Kiloray' , 'Dark_Leggy' , 'Dark_Monk_Munk' , 'Dark_Narlope' , 'Dark_Nero' , 'Dark_Nessy' , 'Dark_Owlie' , 'Dark_Prawnja' , 'Dark_Quebble' , 'Dark_Shanghorse' , 'Dark_Shroomer' , 'Dark_Snatcher' , 'Dark_Snortus' , 'Dark_Sparkitten' , 'Dark_Sparkslug' , 'Dark_Viperd' , 'Dark_Weevern' , 'Dark_Whik' , 'Darryl\nDigsy' , 'Dillorock' , 'Dravo' , 'Drilldent' , 'Drowsie' , 'Dusa' , 'Echino' , 'Eggy' , 'Electronox' , 'Electryo' , 'Elefauna' , 'Elite_Minosoar' , 'Elite_Turkniss' , 'Elite_Waddless' , 'Environox' , 'Equestrion' , 'Exo' , 'Featherbeak' , 'Felis' , 'Fennie' , 'Fernux' , 'Firebrand' , 'Flameling' , 'Flintly','Flowerpiller' , 'Flue' , 'Flurfy' , 'Flurrious' , 'Flutterpat' , 'Foil_Flintly' , 'Foil_Flutterpat' , 'Foil_Fossilia' , 'Foil_Kelpa' , 'Foil_Kiloray' , 'Foil_Liquifien' , 'Foil_Pamboo' , 'Foil_Podo' , 'Foil_Pollifog' , 'Foil_Thundercracker' , 'Foil_Waddles' , 'Fossilia' , 'Frostmite' , 'Furfin' , 'Gemix' , 'Giggles' , 'Gippo' , 'Gog' , 'Grimm_Kiloray' , 'Grubbean' , 'Gurgleplops' , 'Hawkai' , 'Hippoke' , 'Hoghedge' , 'Hotfoot' , 'Humbug' , 'Ignios','Jack' , 'Jellyshock' , 'Joltzer' , 'Kelpa' , 'Kiloray' , 'Lavarilla' , 'Leggy' , 'Light_Tectonyx' , 'Liquifien' , 'Levelorn' , 'Lumera' , 'Luna' , 'Magixio' , 'Magpole' , 'Mech' , 'Microblast' , 'Minosoar' , 'Monk_Munk' , 'Mumbah' , 'Mun_Kee' , 'Narlope' , 'Nero' , 'Nessy' , 'Nibbles' , 'Octavio' , 'Orcatide' , 'Osmeron' , 'Oqlie' , 'Oxo' , 'Pachydo' , 'Pamboo' , 'Patchkin' , 'Peekly' , 'Petrified_Breezycheeks' , 'Petrified_Flue' , 'Petrified_Owlie' , 'Petrified_Snatcher' , 'Petrified_Statikat' , 'Pipsqueak' , 'Pirate_Bludger' , 'Podo' , 'Pollifog' , 'Poltergust' , 'Prawnja' , 'Preshon' , 'Pujin' , 'Pyronox' , 'Quartex' , 'Quebble' , 'Quirk' , 'Raldio' , 'Rhinotaur' , 'Rocker_Octavio' , 'Scarecrow_Charix' , 'Scuzzy' , 'Shanghorse' , 'Shelbee' , 'Shocktopus' , 'Shroomer' , 'Sledgehog' , 'Slithero' , 'Snatcher' , 'Snorkels' , 'Snortus' , 'Sparkitten' , 'Sparkslug' , 'Sparkspeck' , 'Sparkupine' , 'Spinerette' , 'Splender' , 'Squawcat' , 'Squibee' , 'Squirmle' , 'Statikat' , 'Steamguin' , 'Tectonyx' , 'Terranox' , 'Thundercracker' , 'Tongutail' , 'Toro' , 'Treemur' , 'Tulipinny' , 'Turkniss' , 'Twiggum' , 'Ursiwave' , 'Vexie' , 'Viperd' , 'Waddles' , 'Wavesling' , 'Weevern' , 'Whik' , 'Wiggle' , 'Winnebeargo' , 'Wisper' , 'Zapatose']
 crits = []
-def search(misc):
+choice = ['Yes', 'No']
+def search(misc,choice):
     print "Searching for a miscrit"
-    print "Found one!!!!"
-    crit = random.choice(misc)
-    print "You found %s" %crit
-    crits.append(crit)
+    result = random.choice(choice)
+    if result == "Yes":
+        print "Found one!!!!"
+        crit = random.choice(misc)
+        print "You found %s" %crit
+        crits.append(crit)
+    else:
+        print "Sorry but no cigar"
     aftermath()
     return
 
@@ -97,7 +102,7 @@ def aftermath():
     print "Do you want to search more?"
     Quest = raw_input('>')
     if Quest == "yes":
-        search(misc)
+        search(misc,choice)
     elif Quest == "no":
         commonplace()
     else:
@@ -107,6 +112,8 @@ def aftermath():
 
 def home():
     print "This is your home. here you can see all your miscrits."
-    print crits
+    #print crits
+    for x in sorted(crits):
+        print x   #Use any of the following!
     commonplace()
     return
