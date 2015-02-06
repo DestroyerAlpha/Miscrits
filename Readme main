@@ -2,14 +2,20 @@ All right, This is my first project, I mean first large project in python.
 I Decided to start on my favourite game, and created a console version of it.
 Run the main.py , not the game.py;
 
-Version 1.0:
+UPDATE LOG:
+
+Version 1.0:(04-02-2015)
 *You can see the backdrop of the story.
 *Understand the game
 *Catch miscrits(Currently limited to character B, will expand soon.)
 *See all your caught miscrits.
 
-Version 1.1:
-*Added all the miscrits from the awakening patch
+Version 1.1.0:(05-02-2015)
+*Added all the miscrits from the awakening patch.
+
+Version 1.1.1:(06-02-2015)
+*Added a 50% probability of finding a miscrit.
+*Added a better  alphaetically arranged list of caught crits.
 
 
 
